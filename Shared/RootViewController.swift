@@ -138,10 +138,10 @@ class RootViewController : UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! UITableViewCell
         
         cell.detailTextLabel?.numberOfLines = 0
-        cell.detailTextLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        cell.detailTextLabel?.lineBreakMode = .ByWordWrapping
         
         let iconName = self.icons[Int(indexPath.row)].iconName
         let iconPath = NSBundle.mainBundle().pathForResource(iconName, ofType: "png")!
@@ -149,7 +149,7 @@ class RootViewController : UITableViewController {
         
         cell.imageView?.image = UIImage(data: NSData(contentsOfFile: iconPath)!, scale: (isRetina ? 2 : 1))
         cell.textLabel?.text = iconName + ".png"
-        cell.detailTextLabel?.text = self.icons[Int(indexPath.row)].iconDescription
+        cell.detailTextLabel?.text = self.icons[indexPath.row].iconDescription
         
         return cell
     }
