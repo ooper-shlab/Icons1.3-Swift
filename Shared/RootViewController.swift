@@ -124,7 +124,7 @@ class RootViewController : UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return self.icons[Int(indexPath.row)].iconCellHeight + kTopBottomMargins
+        return self.icons[indexPath.row].iconCellHeight + kTopBottomMargins
     }
     
     //MARK: -
@@ -138,7 +138,7 @@ class RootViewController : UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath)
         
         cell.detailTextLabel?.numberOfLines = 0
         cell.detailTextLabel?.lineBreakMode = .ByWordWrapping
