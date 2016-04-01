@@ -71,6 +71,8 @@
 		D0BF180C19E48B8E009A6DB8 /* Default-iOS8-Landscape-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BF180B19E48B8E009A6DB8 /* Default-iOS8-Landscape-736h@3x.png */; };
 		D704BDC71A3289D700E36B51 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704BDC61A3289D700E36B51 /* RootViewController.swift */; };
 		D704BDC81A3289D700E36B51 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704BDC61A3289D700E36B51 /* RootViewController.swift */; };
+		D734A2FC1CAED0CC00BAFAA9 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D734A2FB1CAED0CC00BAFAA9 /* Icon-83.5@2x.png */; };
+		D734A2FD1CAED26F00BAFAA9 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D734A2FB1CAED0CC00BAFAA9 /* Icon-83.5@2x.png */; };
 		D7E6B20D1A32B23A00711F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6B20C1A32B23A00711F59 /* AppDelegate.swift */; };
 		D7E6B20E1A32B3EC00711F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6B20C1A32B23A00711F59 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,7 @@
 		D0BF180619E485DC009A6DB8 /* Default-iOS8-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-iOS8-736h@3x.png"; path = "Icons/Default-iOS8-736h@3x.png"; sourceTree = "<group>"; };
 		D0BF180B19E48B8E009A6DB8 /* Default-iOS8-Landscape-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-iOS8-Landscape-736h@3x.png"; path = "Icons/Default-iOS8-Landscape-736h@3x.png"; sourceTree = "<group>"; };
 		D704BDC61A3289D700E36B51 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D734A2FB1CAED0CC00BAFAA9 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-83.5@2x.png"; path = "Icons/Icon-83.5@2x.png"; sourceTree = "<group>"; };
 		D7662A9C1A7E628D007EB12F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D7E6B20C1A32B23A00711F59 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +210,7 @@
 		D097D76F189832700003853C /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D734A2FB1CAED0CC00BAFAA9 /* Icon-83.5@2x.png */,
 				9FEDA344125BC13100D0F59C /* iTunesArtwork */,
 				D097D771189833800003853C /* Icon-60@2x.png */,
 				D089311819E47B96006B212E /* Icon-60@3x.png */,
@@ -355,6 +359,7 @@
 				D05838A618BD50D900443863 /* Default-iOS7-Portrait@2x.png in Resources */,
 				9F2633191263A45F00DA83F1 /* Default.png in Resources */,
 				9F26331A1263A45F00DA83F1 /* Default@2x.png in Resources */,
+				D734A2FC1CAED0CC00BAFAA9 /* Icon-83.5@2x.png in Resources */,
 				D058389A18BD4F3900443863 /* Default-Landscape@2x.png in Resources */,
 				9F2BD5F31263DA8A0016473B /* Settings.bundle in Resources */,
 				53A7A167179DB5E2000E1566 /* Default-568h@2x.png in Resources */,
@@ -379,6 +384,7 @@
 				D041C8CD18BC5E6B0074D14A /* Icon-Small-50.png in Resources */,
 				D041C8CB18BC5E6B0074D14A /* Icon-72.png in Resources */,
 				D03FCDCE18972A6B00F5AAC2 /* Images.xcassets in Resources */,
+				D734A2FD1CAED26F00BAFAA9 /* Icon-83.5@2x.png in Resources */,
 				D041C8C618BC5E6B0074D14A /* Icon-Small-40@2x.png in Resources */,
 				D0BB503519E4AEA500CD07E2 /* Icon-Small@3x.png in Resources */,
 				D041C8C518BC5E6B0074D14A /* Icon-Small-40.png in Resources */,
