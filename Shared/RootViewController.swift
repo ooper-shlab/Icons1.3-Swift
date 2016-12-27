@@ -126,7 +126,7 @@ class RootViewController : UITableViewController {
     //MARK: UITableViewDelegate
     
     //| ----------------------------------------------------------------------------
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.icons[indexPath.row].iconCellHeight + kTopBottomMargins
     }
     
@@ -134,23 +134,23 @@ class RootViewController : UITableViewController {
     //MARK: UITableViewDataSource
     
     //| ----------------------------------------------------------------------------
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.icons.count
     }
     
     
     //| ----------------------------------------------------------------------------
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         
         cell.detailTextLabel?.numberOfLines = 0
-        cell.detailTextLabel?.lineBreakMode = .ByWordWrapping
+        cell.detailTextLabel?.lineBreakMode = .byWordWrapping
         
-        let iconName = self.icons[Int(indexPath.row)].iconName
-        let iconPath = NSBundle.mainBundle().pathForResource(iconName, ofType: "png")!
-        let isRetina = iconName.rangeOfString("@2x") != nil
+        let iconName = self.icons[indexPath.row].iconName
+        let iconPath = Bundle.main.path(forResource: iconName, ofType: "png")!
+        let isRetina = iconName.range(of: "@2x") != nil
         
-        cell.imageView?.image = UIImage(data: NSData(contentsOfFile: iconPath)!, scale: (isRetina ? 2 : 1))
+        cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(fileURLWithPath: iconPath)), scale: (isRetina ? 2 : 1))
         cell.textLabel?.text = iconName + ".png"
         cell.detailTextLabel?.text = self.icons[indexPath.row].iconDescription
         
