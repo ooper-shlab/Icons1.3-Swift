@@ -22,6 +22,10 @@ let kTopBottomMargins: CGFloat = 20
 class RootViewController : UITableViewController {
     //! Icon information.
     private let icons: [(iconName: String, iconDescription: String, iconCellHeight: CGFloat)] = [
+    ("Icon-1024",
+     "App Store (iOS 11+)",
+     96),
+        
     ("Icon-60@3x",
     "Home screen on iPhone with retina HD display",
     60),
